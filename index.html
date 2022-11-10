@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto Alura</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html"><img src="img/vector.png" alt="logo">
+                Encriptador de Texto
+            </a>
+        </nav>
+    </header>
+
+
+    <main class="main">
+
+        <section class="form-box">
+            <textarea class="txt-in" placeholder="Ingrese texto aquí"></textarea>
+            <p class="alert-text"> <i class="fa fa-exclamation"> </i> Solo letras minúsculas y sin acento.</p>
+
+            <div class="buttons">
+                <input type="button" id="btn-encrypt" class="button-input" value="ENCRIPTAR">
+                <input type="button" id="btn-decrypt" class="button-input" value="DESENCRIPTAR">
+            </div>
+
+        </section>
+
+        <section class="msg-box">
+
+            <div class="msg-img">
+
+                <img src="img/muneco.png" alt="dibujo">
+                <h3>Ningun mensaje fue encontrado</h3>
+                <p> Ingresa el texto que desees encriptar o desencriptar
+                </p>
+
+            </div>
+
+            <div class="msg-text">
+
+                <textarea class="txt-out"></textarea>
+
+                <input type="button" id="btn-copy" class="button-input" value="COPIAR">
+
+                <div class="reload">
+                    <i class="fa fa-refresh" aria-hidden="true" title="Reiniciar programa"></i>
+                </div>
+            </div>
+            
+
+        </section>
+
+    </main>
+
+    <footer>
+               <h3>Diseño de M. Laura Islas <a href="https://github.com/lauislas/ChallengeOracleONE-sprint01" target="_blank"><i class="icon fa fa-github" aria-hidden="true"></i></a> </h3>
+       
+        
+    </footer>
+
+    <script src="https://use.fontawesome.com/921922dca5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

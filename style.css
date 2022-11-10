@@ -1,0 +1,183 @@
+:root {
+    --theme: rgb(169, 204, 231);
+    --background: #D8DFE8;
+    --primary-color: #0A3871;
+    --secondary-color: #495057;
+    --text-color: #ffffff;
+    --icon-color: #ff0000;
+    --shadow: gray;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--background);
+    box-shadow: 0 4px 5px var(--shadow);
+}
+
+.navbar {
+    display: flex;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    padding-right: 25px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.txt-in,
+.txt-out {
+    margin: 10px auto;
+    border: none;
+    resize: none;
+    font-size: 20px;
+    width: 90%;
+    height: 25vh;
+    color: var(--primary-color);
+    outline: none;
+
+}
+
+::placeholder {
+    color: var(--primary-color);
+}
+
+.alert-text {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-input {
+    margin: 10px;
+    height: 60px;
+    border-radius: 24px;
+    font-size: 20px;
+}
+
+.button-input:hover {
+    border-color: var(--secondary-color);
+}
+
+
+#btn-encrypt,
+#btn-copy {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+#btn-decrypt {
+    color: var(--primary-color);
+}
+
+#btn-copy {
+    width: 80%;
+
+}
+
+.reload:hover {
+    color: var(--icon-color);
+}
+
+.msg-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.msg-img {
+    display: none;
+}
+
+.msg-text {
+    display: none;
+}
+
+.msg-text-view {
+    display: block;
+}
+
+
+footer {
+    display: flex;
+    justify-content:space-around;
+    background-color: var(--background);
+    box-shadow: 0 -4px 5px var(--shadow);
+}
+
+.icon{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+@media(min-width: 950px) {
+
+    .main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .form-box {
+        width: 65%;
+    }
+
+    .txt-in,
+    .txt-out {
+        font-size: 25px;
+        height: 60vh;
+    }
+
+    .buttons {
+        flex-direction: row;
+    }
+
+    .button-input {
+        width: 100%;
+    }
+
+    .msg-box {
+        border: 2px solid var(--primary-color);
+        border-radius: 32px;
+        width: 30%;
+    }
+
+    .msg-img {
+        display: block;
+    }
+
+    .msg-img-view {
+        display: none;
+    }
+
+    .msg-text-view {
+        display: block;
+    }
+
+   
+}
